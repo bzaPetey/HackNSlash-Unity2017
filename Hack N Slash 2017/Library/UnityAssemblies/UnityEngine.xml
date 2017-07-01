@@ -4608,12 +4608,12 @@ Note: Using raw JNI functions requires advanced knowledge of the Android Java Na
     </member>
     <member name="P:UnityEngine.AnimatorControllerParameter.defaultFloat">
       <summary>
-        <para>The default bool value for the parameter.</para>
+        <para>The default float value for the parameter.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.AnimatorControllerParameter.defaultInt">
       <summary>
-        <para>The default bool value for the parameter.</para>
+        <para>The default int value for the parameter.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.AnimatorControllerParameter.name">
@@ -7524,6 +7524,16 @@ See Also: WWW.assetBundle, WWW.LoadFromCacheOrDownload.</param>
         <para>The volume of the audio source (0.0 to 1.0).</para>
       </summary>
     </member>
+    <member name="M:UnityEngine.AudioSource.GetAmbisonicDecoderFloat(System.Int32,System.Single&amp;)">
+      <summary>
+        <para>Reads a user-defined parameter of a custom ambisonic decoder effect that is attached to an AudioSource.</para>
+      </summary>
+      <param name="index">Zero-based index of user-defined parameter to be read.</param>
+      <param name="value">Return value of the user-defined parameter that is read.</param>
+      <returns>
+        <para>True, if the parameter could be read.</para>
+      </returns>
+    </member>
     <member name="M:UnityEngine.AudioSource.GetCustomCurve(UnityEngine.AudioSourceCurveType)">
       <summary>
         <para>Get the current custom curve for the given AudioSourceCurveType.</para>
@@ -7631,6 +7641,16 @@ See Also: WWW.assetBundle, WWW.LoadFromCacheOrDownload.</param>
         <para>Plays the clip at a specific time on the absolute time-line that AudioSettings.dspTime reads from.</para>
       </summary>
       <param name="time">Time in seconds on the absolute time-line that AudioSettings.dspTime refers to for when the sound should start playing.</param>
+    </member>
+    <member name="M:UnityEngine.AudioSource.SetAmbisonicDecoderFloat(System.Int32,System.Single)">
+      <summary>
+        <para>Sets a user-defined parameter of a custom ambisonic decoder effect that is attached to an AudioSource.</para>
+      </summary>
+      <param name="index">Zero-based index of user-defined parameter to be set.</param>
+      <param name="value">New value of the user-defined parameter.</param>
+      <returns>
+        <para>True, if the parameter could be set.</para>
+      </returns>
     </member>
     <member name="M:UnityEngine.AudioSource.SetCustomCurve(UnityEngine.AudioSourceCurveType,UnityEngine.AnimationCurve)">
       <summary>
@@ -19951,7 +19971,7 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
     </member>
     <member name="M:UnityEngine.GUILayout.Button(UnityEngine.Texture,UnityEngine.GUILayoutOption[])">
       <summary>
-        <para>Make a single press button. The user clicks them and something happens immediately.</para>
+        <para>Make a single press button.</para>
       </summary>
       <param name="text">Text to display on the button.</param>
       <param name="image">Texture to display on the button.</param>
@@ -19966,7 +19986,7 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
     </member>
     <member name="M:UnityEngine.GUILayout.Button(System.String,UnityEngine.GUILayoutOption[])">
       <summary>
-        <para>Make a single press button. The user clicks them and something happens immediately.</para>
+        <para>Make a single press button.</para>
       </summary>
       <param name="text">Text to display on the button.</param>
       <param name="image">Texture to display on the button.</param>
@@ -19981,7 +20001,7 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
     </member>
     <member name="M:UnityEngine.GUILayout.Button(UnityEngine.GUIContent,UnityEngine.GUILayoutOption[])">
       <summary>
-        <para>Make a single press button. The user clicks them and something happens immediately.</para>
+        <para>Make a single press button.</para>
       </summary>
       <param name="text">Text to display on the button.</param>
       <param name="image">Texture to display on the button.</param>
@@ -19996,7 +20016,7 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
     </member>
     <member name="M:UnityEngine.GUILayout.Button(UnityEngine.Texture,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
       <summary>
-        <para>Make a single press button. The user clicks them and something happens immediately.</para>
+        <para>Make a single press button.</para>
       </summary>
       <param name="text">Text to display on the button.</param>
       <param name="image">Texture to display on the button.</param>
@@ -20011,7 +20031,7 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
     </member>
     <member name="M:UnityEngine.GUILayout.Button(System.String,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
       <summary>
-        <para>Make a single press button. The user clicks them and something happens immediately.</para>
+        <para>Make a single press button.</para>
       </summary>
       <param name="text">Text to display on the button.</param>
       <param name="image">Texture to display on the button.</param>
@@ -20026,7 +20046,7 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
     </member>
     <member name="M:UnityEngine.GUILayout.Button(UnityEngine.GUIContent,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
       <summary>
-        <para>Make a single press button. The user clicks them and something happens immediately.</para>
+        <para>Make a single press button.</para>
       </summary>
       <param name="text">Text to display on the button.</param>
       <param name="image">Texture to display on the button.</param>
@@ -27866,6 +27886,11 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
         <para>The main material's color.</para>
       </summary>
     </member>
+    <member name="P:UnityEngine.Material.doubleSidedGI">
+      <summary>
+        <para>Gets and sets whether the Double Sided Global Illumination setting is enabled for this material.</para>
+      </summary>
+    </member>
     <member name="P:UnityEngine.Material.enableInstancing">
       <summary>
         <para>Gets and sets whether GPU instancing is enabled for this material.</para>
@@ -35445,6 +35470,11 @@ If a string, the string will be converted to raw bytes via &lt;a href="http:msdn
         <para>The duration of the particle system in seconds.</para>
       </summary>
     </member>
+    <member name="P:UnityEngine.ParticleSystem.MainModule.emitterVelocityMode">
+      <summary>
+        <para>Control how the Particle System calculates its velocity, when moving in the world.</para>
+      </summary>
+    </member>
     <member name="P:UnityEngine.ParticleSystem.MainModule.gravityModifier">
       <summary>
         <para>Scale applied to the gravity, defined by Physics.gravity.</para>
@@ -37064,6 +37094,21 @@ The Noise Module allows you to apply turbulence to the movement of your particle
     <member name="F:UnityEngine.ParticleSystemEmissionType.Time">
       <summary>
         <para>Emit over time.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.ParticleSystemEmitterVelocityMode">
+      <summary>
+        <para>Control how a Particle System calcualtes its velocity.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.ParticleSystemEmitterVelocityMode.Rigidbody">
+      <summary>
+        <para>Calculate the Particle System velocity by using a Rigidbody or Rigidbody2D component, if one exists on the Game Object.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.ParticleSystemEmitterVelocityMode.Transform">
+      <summary>
+        <para>Calculate the Particle System velocity by using the Transform component.</para>
       </summary>
     </member>
     <member name="T:UnityEngine.ParticleSystemGradientMode">
@@ -40383,6 +40428,23 @@ Note that IgnoreLayerCollision will reset the trigger state of affected collider
       <summary>
         <para>Extensions for all the types that implements IPlayable.</para>
       </summary>
+    </member>
+    <member name="M:UnityEngine.Playables.PlayableExtensions.AddInput(U,V,System.Int32)">
+      <summary>
+        <para>Add a new input port and connect the output port of a Playable to this new port.</para>
+      </summary>
+      <param name="playable">The Playable used by this operation.</param>
+      <param name="sourcePlayable">The Playable to connect to.</param>
+      <param name="sourceOutputIndex">The output port of the Playable.</param>
+    </member>
+    <member name="M:UnityEngine.Playables.PlayableExtensions.ConnectInput(U,System.Int32,V,System.Int32)">
+      <summary>
+        <para>Connect the output port of a Playable to one of the input ports.</para>
+      </summary>
+      <param name="playable">The Playable used by this operation.</param>
+      <param name="inputIndex">The input port index.</param>
+      <param name="sourcePlayable">The Playable to connect to.</param>
+      <param name="sourceOutputIndex">The output port of the Playable.</param>
     </member>
     <member name="M:UnityEngine.Playables.PlayableExtensions.Destroy(U)">
       <summary>
