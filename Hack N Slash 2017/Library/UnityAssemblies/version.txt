@@ -1,15 +1,15 @@
-2017.1.0b10:3.1.0.0
+2017.1.0f1:3.1.0.0
 StandaloneWindows64
-D:/Program Files/Unity 2017.1.0b10/Editor/Data/Managed/UnityEditor.dll
-D:/Program Files/Unity 2017.1.0b10/Editor/Data/Managed/UnityEngine.dll
-D:/Program Files/Unity 2017.1.0b10/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll
-D:/Program Files/Unity 2017.1.0b10/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll
-D:/Program Files/Unity 2017.1.0b10/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll
-D:/Program Files/Unity 2017.1.0b10/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll
-D:/Program Files/Unity 2017.1.0b10/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll
-D:/Program Files/Unity 2017.1.0b10/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll
-D:/Program Files/Unity 2017.1.0b10/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll
-D:/Program Files/Unity 2017.1.0b10/Editor/Data\Managed/Mono.Cecil.dll
-D:\Program Files\Unity 2017.1.0b10\Editor\Data\PlaybackEngines\AppleTVSupport\UnityEditor.iOS.Extensions.Xcode.dll
-D:/Program Files/Unity 2017.1.0b10/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll
-D:/Program Files/Unity 2017.1.0b10/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll
+D:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll
+D:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll
+D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll
+D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll
+D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll
+D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll
+D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll
+D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll
+D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll
+D:/Program Files/Unity/Editor/Data\Managed/Mono.Cecil.dll
+D:\Program Files\Unity\Editor\Data\PlaybackEngines\AppleTVSupport\UnityEditor.iOS.Extensions.Xcode.dll
+D:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll
+D:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll

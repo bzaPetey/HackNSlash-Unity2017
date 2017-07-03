@@ -6097,6 +6097,14 @@ See Also: WWW.assetBundle, WWW.LoadFromCacheOrDownload.</param>
         <para>Return all asset names in the AssetBundle.</para>
       </summary>
     </member>
+    <member name="M:UnityEngine.AssetBundle.GetAllLoadedAssetBundles">
+      <summary>
+        <para>To use when you need to get a list of all the currently loaded Asset Bundles.</para>
+      </summary>
+      <returns>
+        <para>Returns IEnumerable&lt;AssetBundle&gt; of all currently loaded Asset Bundles.</para>
+      </returns>
+    </member>
     <member name="M:UnityEngine.AssetBundle.GetAllScenePaths">
       <summary>
         <para>Return all the scene asset paths (paths to *.unity assets) in the AssetBundle.</para>
@@ -6268,6 +6276,12 @@ See Also: WWW.assetBundle, WWW.LoadFromCacheOrDownload.</param>
         <para>Unloads all assets in the bundle.</para>
       </summary>
       <param name="unloadAllLoadedObjects"></param>
+    </member>
+    <member name="M:UnityEngine.AssetBundle.UnloadAllAssetBundles(System.Boolean)">
+      <summary>
+        <para>Unloads all currently loaded Asset Bundles.</para>
+      </summary>
+      <param name="unloadAllObjects">Determines whether the current instances of objects loaded from Asset Bundles will also be unloaded.</param>
     </member>
     <member name="T:UnityEngine.AssetBundleCreateRequest">
       <summary>
@@ -43122,13 +43136,13 @@ frame. Minimum value is 1 and maximum is 33.</para>
       <summary>
         <para>Get the corners of the calculated rectangle in the local space of its Transform.</para>
       </summary>
-      <param name="fourCornersArray">Array that corners should be filled into.</param>
+      <param name="fourCornersArray">The array that corners are filled into.</param>
     </member>
     <member name="M:UnityEngine.RectTransform.GetWorldCorners(UnityEngine.Vector3[])">
       <summary>
         <para>Get the corners of the calculated rectangle in world space.</para>
       </summary>
-      <param name="fourCornersArray">Array that corners should be filled into.</param>
+      <param name="fourCornersArray">The ray that corners are filled into.</param>
     </member>
     <member name="T:UnityEngine.RectTransform.ReapplyDrivenProperties">
       <summary>

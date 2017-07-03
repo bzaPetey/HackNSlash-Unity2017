@@ -2484,7 +2484,8 @@ Transitions with exit times greater than one will be evaluated only once, so the
     </member>
     <member name="M:UnityEditor.AssetDatabase.GetAssetPathsFromAssetBundleAndAssetName(System.String,System.String)">
       <summary>
-        <para>Get the asset paths from the given assetBundle name and asset name.</para>
+        <para>Get the Asset paths for all Assets tagged with assetBundleName and
+                named assetName.</para>
       </summary>
       <param name="assetBundleName"></param>
       <param name="assetName"></param>
@@ -17027,19 +17028,14 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
         <para>iOS status bar style.</para>
       </summary>
     </member>
-    <member name="F:UnityEditor.iOSStatusBarStyle.BlackOpaque">
-      <summary>
-        <para>Black opaque.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEditor.iOSStatusBarStyle.BlackTranslucent">
-      <summary>
-        <para>Black translucent.</para>
-      </summary>
-    </member>
     <member name="F:UnityEditor.iOSStatusBarStyle.Default">
       <summary>
         <para>Default.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEditor.iOSStatusBarStyle.LightContent">
+      <summary>
+        <para>A light status bar, intended for use on dark backgrounds.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.iOSTargetDevice">
@@ -23144,6 +23140,11 @@ For more information - https:msdn.microsoft.comlibrarywindowsappshh779671https:m
     <member name="F:UnityEditor.Rendering.TierSettings.detailNormalMap">
       <summary>
         <para>Allows you to specify whether Detail Normal Map should be sampled if assigned.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEditor.Rendering.TierSettings.enableLPPV">
+      <summary>
+        <para>Allows you to specify whether Light Probe Proxy Volume should be used.</para>
       </summary>
     </member>
     <member name="F:UnityEditor.Rendering.TierSettings.hdr">

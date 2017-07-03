@@ -6,9 +6,12 @@ public class Buff {
     [SerializeField] int duration;
     [SerializeField] int curDuration;
     [SerializeField] bool permanent = false;
+    [SerializeField] bool isBuff;               //if not a buff, then a debuff
 
     [SerializeField] Icon icon;
 
     //effects
-    //how to tell if it is a buff or a debuff
+        //stat - amount
+    //description
+    //buff level
 }

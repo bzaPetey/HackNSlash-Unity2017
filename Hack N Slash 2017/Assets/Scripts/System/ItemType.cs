@@ -1,6 +1,7 @@
-﻿public enum ItemType {
+﻿public enum ItemTypes {
     WEAPON,
     ARMOR,
     TRINKET,
-    CONSUMABLE
+    CONSUMABLE,
+    POWER_UP
 }
